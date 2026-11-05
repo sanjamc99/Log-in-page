@@ -19,7 +19,7 @@ const titulo = "Iniciar Sesión";
       <h2></h2>
       <p class="subtitulo">Ingresa tus credenciales para acceder</p>
 
-      <form action="/dashboard" method="POST">
+      <form id="loginForm">
         <div class="input-group">
           <label for="email">Correo electrónico</label>
           <input 
@@ -53,5 +53,9 @@ const titulo = "Iniciar Sesión";
         <button type="submit">Ingresar</button>
       </form>
     </div>
+    <script>
+ //crear scripts que manejen la logica de validacion de datos, manejo de errores
+      const form = document.getElementById('loginForm');
+    </script>
   </body>
 </html>
