@@ -1,0 +1,31 @@
+---
+const titulo = "Recuperar Contraseña";
+import '../styles/global.css';
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{titulo}</title>
+  </head>
+  <body>
+    <div class="login-container">
+      <h2>{titulo}</h2>
+      <p class="subtitulo">Ingresa tu correo para recuperar el acceso</p>
+
+      <form action="/login" method="POST">
+        <div class="input-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required />
+        </div>
+
+        <button type="submit">Enviar instrucciones</button>
+      </form>
+      
+      <p style="text-align: center; margin-top: 1rem;">
+        <a href="/index" class="olvidado">Volver al login</a>
+      </p>
+    </div>
+  </body>
+</html>
